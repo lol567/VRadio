@@ -1,0 +1,60 @@
+<% include common/header.ejs %>
+
+<div class="createBox row">
+    <div class="left-panel">
+            <div class="row">
+                <div class="col-md-7">
+                    <form class="form-horizontal">
+                        <div class="form-group img-group">
+                            <label class="col-sm-2 control-label">Картинка</label>
+                            <div class="col-sm-10">
+                                <span class="btn btn-default btn-file">Вибрати <input type="file" accept="image/png, image/jpeg, image/gif" id="inputImg"></span>
+                            </div>
+                            <span class="img-help-block" style="display:none">
+                                Виберіть картику
+                            </span>
+                        </div>
+                        <div class="form-group name-group">
+                            <label class="col-sm-2 control-label">Назва</label>
+                            <div class="col-sm-10">
+                                <input class="form-control" type="text" id="inputName" placeholder="Name of radio">
+                            </div>
+                            <span class="name-help-block" style="display:none">
+                                Введіть назву ім’я, без цифр
+                            </span>
+                        </div>
+                        <div class="form-group style-group">
+                            <label class="col-sm-2 control-label">Стиль радіо</label>
+                            <div class="col-sm-10">
+                                <input class="form-control" type="text" id="inputStyle" placeholder="POP">
+                            </div>
+                            <span class="style-help-block" style="display:none">
+                                Введіть стиль радіо, без цифр
+                            </span>
+                        </div>
+                        <div class="form-group description-group">
+                            <label class="col-sm-2 control-label">Опис</label>
+                            <div class="col-sm-10">
+                                <textarea class="form-control" type="text" id="inputDescription" placeholder="Твій опис"></textarea>
+                            </div>
+                            <span class="description-help-block" style="display:none">
+                                Введіть короткий опис радіо
+                            </span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group next-step-wrap">
+                    <div class="next-step-width">
+                        <button type="button" class="btn btn-default next-step-button">
+                            Далі
+                            <i class="glyphicon glyphicon-chevron-right icon-white">
+                            </i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>
+<% include common/footer.ejs %>

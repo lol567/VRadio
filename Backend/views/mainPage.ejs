@@ -1,0 +1,34 @@
+<% include common/header.ejs %>
+
+<!--Payer-->
+<div id="container" class="player">
+    <div id="audio-player">
+        <div id="audio-info">
+            <span class="artist"></span> - <span class="title"></span>
+        </div>
+        <input id="volume" type="range" min="0" max="10" value="5" />
+        <br>
+        <div id="buttons">
+		 <span>
+			<button id="prev"></button>
+			<button id="play"></button>
+			<button id="pause"></button>
+			<button id="next"></button>
+			</span>
+        </div>
+        <div class="clearfix"></div>
+        <div id="tracker">
+            <div id="progressBar">
+                <span id="progress"></span>
+            </div>
+            <span id="duration"></span>
+        </div>
+        <div class="clearfix"></div>
+        <ul id="playlist">
+
+        </ul>
+    </div>
+
+</div>
+
+<% include common/footer.ejs %>
